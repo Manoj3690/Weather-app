@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+    font-family: 'Patrick Hand', cursive;
+    box-sizing: border-box;
+    background-color: #F38181;
+    color: #000;
+    margin:0;
+    padding:0;
+    text-align: center;
+    
+}
+.container{
+    display: inline-block;
+}
+
+.heading{
+    transform: rotate(2deg);
+    display: inline-block;
+    
+}
+.header-section{
+    background-color:#FCE38A;
+    margin-top:-20px;
+    text-align: center;
+    padding: 3px 0;
+    box-shadow: 2px 2px 6px black;
+}
+
+.searching-section,.description-section,.temperature-section,.others-section{
+    
+    background-color: #FCE38A;
+    margin: 20px 10px;
+    
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px black,0 0 0 black;
+}
+.temperature-section,.others-section{
+    display: inline-block;
+   
+}
+.description-section img{
+    width: 280px;
+    background-color:transparent;
+   
+    border:1px solid black;
+    border-radius:10px ;
+
+    margin: 10px 0;
+    filter: contrast(30);
+}
+.searching-section input{
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 0 3px;
+    background-color: #fdeca8;
+    
+    border: 1px solid white;
+    border-radius: 5px;
+    text-shadow: 1px 1px 3px black;
+    
+}
+.searching-section input::placeholder{
+    text-shadow: none;
+}
+.searching-section button{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #95E1D3;
+    border-radius: 5px;
+}
+.searching-section button:active{
+    background-color: #EAFFD0;
+}
+.description-section p{
+    margin: 6px;
+}
+.description-section .city-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.description-section .climate-name{
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer-section{
+    background-color: #FCE38A;
+    padding: 3px 0;
+    box-shadow: 2px 2px 6px black;
+    
+}
+
+@media (500px>width<1200px){
+    .searching-section,.description-section,.temperature-section,.others-section{
+    
+        background-color: #FCE38A;
+        margin: 20px 10px;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px black,0 0 0 black;
+    }
+    
+}
